@@ -1,11 +1,7 @@
-/* You can add global styles to this file, and also import other style files */
-/*body{
+@import "../node_modules/bootstrap/dist/css/bootstrap.css";
+	body{
+  width: 100%;
   background-image: url(./assets/background.jpg);
   background-size: cover;
 
-}*/
-@import "../node_modules/bootstrap/dist/css/bootstrap.css";
-body{
-  background-image: url(./assets/background.jpg);
 }
-
