@@ -3,7 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { MainPageComponent } from './components/main-page/main-page.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 const routes: Routes = [
-  {path:'', component:NavBarComponent
+  {path:'', component:MainPageComponent
+
   }
 ];
 
