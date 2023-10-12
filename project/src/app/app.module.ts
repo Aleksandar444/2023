@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { MainPageComponent } from './components/main-page/main-page.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { LoginComponent } from './components/login/login.component';
-
+import { Router } from '@angular/router';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,8 +16,15 @@ import { LoginComponent } from './components/login/login.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(private router: Router) {
+    this.router.navigate(['']);
+  }
+
+
+}
