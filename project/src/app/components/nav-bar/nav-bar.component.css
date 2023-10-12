@@ -1,0 +1,12 @@
+.nav-ac {
+  background-color: #063455;
+}
+.nav-link {
+  color: white !important;
+  border-right: 2px;
+
+}
+.navbar-brand{
+  font-size: 25px;
+  color: whitesmoke !important;
+}
