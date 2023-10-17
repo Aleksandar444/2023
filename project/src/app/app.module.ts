@@ -9,6 +9,10 @@ import { MainPageComponent } from './components/main-page/main-page.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { LoginComponent } from './components/login/login.component';
 import { Router } from '@angular/router';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,6 +25,9 @@ import { Router } from '@angular/router';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    MatToolbarModule,
+    MatIconModule
+
 
   ],
   providers: [],
