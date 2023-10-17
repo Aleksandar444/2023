@@ -8,7 +8,14 @@ import { MatDialog } from '@angular/material/dialog';
 })
 export class AddEmpComponent {
 
-
+  education : string[] = [
+    'Elementary Education',
+    'Secondary Education',
+    'Vocational Training',
+    'Bachelors Degree',
+    'Masters Degree',
+    'Doctorate (PhD)'
+  ]
 
 }
 
