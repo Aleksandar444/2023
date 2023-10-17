@@ -1,8 +1,5 @@
-@import "../node_modules/bootstrap/dist/css/bootstrap.css";
-	body{
 
-  background-image: url(./assets/background.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+body{
+  margin: 0px;
 }
