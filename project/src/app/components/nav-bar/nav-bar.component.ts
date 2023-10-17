@@ -1,5 +1,5 @@
 import { Component, Injectable, inject } from '@angular/core';
-import { AddEmpComponent } from '../add-emp/add-emp.component';
+import { AddEmpComponent } from '../../add-emp/add-emp.component';
 import { MatDialog } from '@angular/material/dialog';
 @Component({
   selector: 'app-nav-bar',
