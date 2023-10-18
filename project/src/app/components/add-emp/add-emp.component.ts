@@ -8,7 +8,7 @@ import { MatDialog } from '@angular/material/dialog';
 })
 export class AddEmpComponent {
 
-  education : string[] = [
+  education : string[] = [ //niz stringova za zeljeni stepen strucne spreme
     'Elementary Education',
     'Secondary Education',
     'Vocational Training',
