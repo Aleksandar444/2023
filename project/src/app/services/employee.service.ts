@@ -17,4 +17,8 @@ export class EmployeeService {
   getEmpList() : Observable<any>{ // servis za fetch data iz Emloyee List
     return this._http.get('http://localhost:3000/employees');   // metoda vraca observable response
   }
+
+  deleteEmployee(id: number) : Observable<any>{
+    return this._http.delete(`http://localhost:3000/employees/${id}`);
+  }
 }
