@@ -1,12 +1,14 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild,inject,Injectable } from '@angular/core';
 import {MatTableDataSource} from '@angular/material/table';
 import {MatSort, MatSortModule} from '@angular/material/sort';
+import { EmployeeService } from 'src/app/services/employee.service';
 @Component({
   selector: 'app-main-page',
   templateUrl: './main-page.component.html',
   styleUrls: ['./main-page.component.css']
 })
-export class MainPageComponent {
+@Injectable()
+export class MainPageComponent implements OnInit {
 
   displayedColumns: string[] = ['id',
    'firstName',
@@ -22,4 +24,22 @@ export class MainPageComponent {
 
 
   @ViewChild(MatSort) sort: MatSort;
+
+  constructor( private _empService:EmployeeService){
+
+  }
+  ngOnInit(): void {
+    this.getEmpList();
+  }
+  getEmpList(){ // metoda za prikupljanje podataka iz liste
+    this._empService.getEmpList().subscribe({
+      next:(res) => {
+        this.dataSource = new MatTableDataSource(res);
+        this.dataSource.sort =  this.sort;
+      },
+      error : (err) => {
+        console.log(err);
+      }
+    })
+}
 }
