@@ -18,7 +18,11 @@ export class EmployeeService {
     return this._http.get('http://localhost:3000/employees');   // metoda vraca observable response
   }
 
-  deleteEmployee(id: number) : Observable<any>{
+  deleteEmployee(id: number) : Observable<any>{ // servis za brisanje employee iz liste
     return this._http.delete(`http://localhost:3000/employees/${id}`);
   }
+
+  /*updateEmployee(data : any) : Observable<any> {
+    return this._http.put('http://localhost:3000/employees', data);
+  }*/
 }

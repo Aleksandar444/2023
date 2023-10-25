@@ -44,6 +44,7 @@ export class AddEmpComponent {
       next: (val: any) => {
         alert('Employee added successfully!');
         this._dialogRef.close();
+
       },
       error: (error : any) =>{
         console.error(error);

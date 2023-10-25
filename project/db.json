@@ -21,61 +21,13 @@
       "firstName": "Aleksandar",
       "lastName": "Čief",
       "email": "sallehtc55@gmail.com",
-      "date": "2023-10-08T22:00:00.000Z",
-      "gender": "male",
+      "date": "2023-10-11T22:00:00.000Z",
+      "gender": "",
       "education": "Bachelors Degree",
-      "company": "ddd",
+      "company": "comdata",
       "experience": 1,
       "country": "Serbia",
-      "id": 2
-    },
-    {
-      "firstName": "Marko",
-      "lastName": "Sijakovic",
-      "email": "sija@gmail.com",
-      "date": "2023-10-17T22:00:00.000Z",
-      "gender": "male",
-      "education": "Masters Degree",
-      "company": "Lalic Line",
-      "experience": 10,
-      "country": "Croatia",
-      "id": 4
-    },
-    {
-      "firstName": "test1",
-      "lastName": "test1",
-      "email": "test@gmail.com",
-      "date": "2023-10-11T22:00:00.000Z",
-      "gender": "female",
-      "education": "Doctorate (PhD)",
-      "company": "tt",
-      "experience": 2,
-      "country": "tt",
-      "id": 6
-    },
-    {
-      "firstName": "ss2",
-      "lastName": "dd2",
-      "email": "sallehtc55@gmail.com",
-      "date": "2023-10-02T22:00:00.000Z",
-      "gender": "male",
-      "education": "Masters Degree",
-      "company": "ss",
-      "experience": 2,
-      "country": "dd",
-      "id": 7
-    },
-    {
-      "firstName": "test3",
-      "lastName": "test3",
-      "email": "sallehtc55@gmail.com",
-      "date": "2023-10-04T22:00:00.000Z",
-      "gender": "",
-      "education": "Vocational Training",
-      "company": "rrr",
-      "experience": 1,
-      "country": "azerbejdzan",
-      "id": 8
+      "id": 1
     }
   ]
 }

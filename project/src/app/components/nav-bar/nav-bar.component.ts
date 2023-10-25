@@ -22,6 +22,7 @@ export class NavBarComponent   {
 
   addEmp(){ // za otvaranje addEmp componente
     this._dialog.open(AddEmpComponent);
+
   }
 
 
