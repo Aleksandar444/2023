@@ -5,80 +5,83 @@
 
 </mat-toolbar>
 
+<div class="main">
+  <div class="table-container">
+    <table mat-table [dataSource]="dataSource" matSort>
 
-<div class="mat-elevation-z8">
-  <table mat-table [dataSource]="dataSource" matSort>
+      <!-- ID Column -->
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> <b>ID</b> </th>
+        <td mat-cell *matCellDef="let row"> {{row.id}} </td>
+      </ng-container>
 
-    <!-- ID Column -->
-    <ng-container matColumnDef="id">
-      <th mat-header-cell *matHeaderCellDef mat-sort-header> <b>ID</b> </th>
-      <td mat-cell *matCellDef="let row"> {{row.id}} </td>
-    </ng-container>
+      <!-- First name Column -->
+      <ng-container matColumnDef="firstName">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> <b>First name </b></th>
+        <td mat-cell *matCellDef="let row"> {{row.firstName}}% </td>
+      </ng-container>
 
-    <!-- First name Column -->
-    <ng-container matColumnDef="firstName">
-      <th mat-header-cell *matHeaderCellDef mat-sort-header> <b>First name </b></th>
-      <td mat-cell *matCellDef="let row"> {{row.firstName}}% </td>
-    </ng-container>
+      <!-- Last name Column -->
+      <ng-container matColumnDef="lastName">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> <b>Last name</b> </th>
+        <td mat-cell *matCellDef="let row"> {{row.lastName}} </td>
+      </ng-container>
 
-    <!-- Last name Column -->
-    <ng-container matColumnDef="lastName">
-      <th mat-header-cell *matHeaderCellDef mat-sort-header> <b>Last name</b> </th>
-      <td mat-cell *matCellDef="let row"> {{row.lastName}} </td>
-    </ng-container>
+      <!-- Email Column -->
+      <ng-container matColumnDef="email">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> <b>E-mail</b> </th>
+        <td mat-cell *matCellDef="let row"> {{row.email}} </td>
+      </ng-container>
 
-    <!-- Email Column -->
-    <ng-container matColumnDef="email">
-      <th mat-header-cell *matHeaderCellDef mat-sort-header> <b>E-mail</b> </th>
-      <td mat-cell *matCellDef="let row"> {{row.email}} </td>
-    </ng-container>
+       <!-- Date Column -->
+       <ng-container matColumnDef="date">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> <b>Date</b> </th>
+        <td mat-cell *matCellDef="let row"> {{row.date | date}} </td>
+      </ng-container>
 
-     <!-- Date Column -->
-     <ng-container matColumnDef="date">
-      <th mat-header-cell *matHeaderCellDef mat-sort-header> <b>Date</b> </th>
-      <td mat-cell *matCellDef="let row"> {{row.date | date}} </td>
-    </ng-container>
+       <!-- Gender Column -->
+       <ng-container matColumnDef="gender">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> <b>Gender</b> </th>
+        <td mat-cell *matCellDef="let row"> {{row.gender}} </td>
+      </ng-container>
 
-     <!-- Gender Column -->
-     <ng-container matColumnDef="gender">
-      <th mat-header-cell *matHeaderCellDef mat-sort-header> <b>Gender</b> </th>
-      <td mat-cell *matCellDef="let row"> {{row.gender}} </td>
-    </ng-container>
+       <!-- Education Column -->
+       <ng-container matColumnDef="education">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> <b>Education</b> </th>
+        <td mat-cell *matCellDef="let row"> {{row.education}} </td>
+      </ng-container>
 
-     <!-- Education Column -->
-     <ng-container matColumnDef="education">
-      <th mat-header-cell *matHeaderCellDef mat-sort-header> <b>Education</b> </th>
-      <td mat-cell *matCellDef="let row"> {{row.education}} </td>
-    </ng-container>
+       <!-- Company Column -->
+       <ng-container matColumnDef="company">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> <b>Company</b> </th>
+        <td mat-cell *matCellDef="let row"> {{row.company}} </td>
+      </ng-container>
 
-     <!-- Company Column -->
-     <ng-container matColumnDef="company">
-      <th mat-header-cell *matHeaderCellDef mat-sort-header> <b>Company</b> </th>
-      <td mat-cell *matCellDef="let row"> {{row.company}} </td>
-    </ng-container>
+       <!-- Experience Column -->
+       <ng-container matColumnDef="experience">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> <b>Experience</b> </th>
+        <td mat-cell *matCellDef="let row"> {{row.experience}} </td>
+      </ng-container>
 
-     <!-- Experience Column -->
-     <ng-container matColumnDef="experience">
-      <th mat-header-cell *matHeaderCellDef mat-sort-header> <b>Experience</b> </th>
-      <td mat-cell *matCellDef="let row"> {{row.experience}} </td>
-    </ng-container>
-
-     <!-- Country Column -->
-     <ng-container matColumnDef="country">
-      <th mat-header-cell *matHeaderCellDef mat-sort-header> <b>Country</b> </th>
-      <td mat-cell *matCellDef="let row"> {{row.country}} </td>
-    </ng-container>
-
-
-    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-
-    <!-- Row shown when there is no matching data. -->
-
-  </table>
+       <!-- Country Column -->
+       <ng-container matColumnDef="country">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> <b>Country</b> </th>
+        <td mat-cell *matCellDef="let row"> {{row.country}} </td>
+      </ng-container>
 
 
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+      <!-- Row shown when there is no matching data. -->
+
+    </table>
+
+
+  </div>
 </div>
+
+
 
 
 

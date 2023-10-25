@@ -88,6 +88,18 @@
       "experience": 2,
       "country": "tt",
       "id": 6
+    },
+    {
+      "firstName": "ss2",
+      "lastName": "dd2",
+      "email": "sallehtc55@gmail.com",
+      "date": "2023-10-02T22:00:00.000Z",
+      "gender": "male",
+      "education": "Masters Degree",
+      "company": "ss",
+      "experience": 2,
+      "country": "dd",
+      "id": 7
     }
   ]
 }
