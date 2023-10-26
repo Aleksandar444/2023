@@ -1,27 +1,29 @@
-<div class="container">
-  <div class="row">
-    <div class="col-md-6">
-      <div class="card">
-        <div class="text-center">
-          <h1>Login</h1>
-          <h6>Please enter Username and password!</h6>
-          <form>
-            <form (ngSubmit)="submitForm()">
-              <div class="mb-3">
-                <label  class="form-label">Username</label>
-                <input type="text" class="form-control" id="username" [(ngModel)]="username" name="username" required>
-              </div>
-              <div class="mb-3">
-                <label  class="form-label">Password</label>
-                <input type="password" class="form-control" id="password" [(ngModel)]="password" name="password" required>
-              </div>
-              <button type="submit" class="btn btn-primary">Login</button>
+<div mat-dialog-title >
+  <h3>Employee Register Form</h3>
+</div>
+<form [formGroup]="empForm" >
+  <div mat-dialog-content class="content">
+    <div class="row">
+      <mat-form-field >
+        <mat-label>First Name</mat-label>
+        <input matInput type="email" formControlName="email" >
+      </mat-form-field>
 
-            </form>
-          </form>
-        </div>
-      </div>
     </div>
 
+    <div class="row">
+      <mat-form-field  >
+        <mat-label>Experience (years)</mat-label>
+        <input matInput  type="number" formControlName="experience">
+      </mat-form-field>
+      <mat-form-field  >
+        <mat-label>Country</mat-label>
+        <input matInput  formControlName="country">
+      </mat-form-field>
+    </div>
   </div>
-</div>
+  <div mat-dialog-actions class="action">
+    <button mat-raised-button color="primary" type="submit">Register</button>
+    <button mat-raised-button color="warn" >Cancel</button>
+  </div>
+</form>
