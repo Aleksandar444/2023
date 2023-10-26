@@ -23,6 +23,7 @@ import {MatRadioModule} from '@angular/material/radio';
 import {MatSelectModule} from '@angular/material/select';
 import { HttpClientModule } from '@angular/common/http';
 import {MatTableModule} from '@angular/material/table';
+import { EmployeeService } from './services/employee.service';
 
 @NgModule({
   declarations: [
@@ -54,7 +55,7 @@ import {MatTableModule} from '@angular/material/table';
 
 
   ],
-  providers: [],
+  providers: [EmployeeService],
   bootstrap: [AppComponent]
 })
 export class AppModule {

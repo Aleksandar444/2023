@@ -21,13 +21,13 @@
       "firstName": "Aleksandar",
       "lastName": "Čief",
       "email": "sallehtc55@gmail.com",
-      "date": "2023-10-11T22:00:00.000Z",
-      "gender": "",
-      "education": "Bachelors Degree",
-      "company": "comdata",
-      "experience": 1,
+      "date": "",
+      "gender": "male",
+      "education": "Masters Degree",
+      "company": "sada",
+      "experience": 2,
       "country": "Serbia",
-      "id": 1
+      "id": 3
     }
   ]
 }
