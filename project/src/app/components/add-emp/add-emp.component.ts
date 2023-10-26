@@ -1,15 +1,17 @@
 import { DialogRef } from '@angular/cdk/dialog';
-import { Component } from '@angular/core';
+import { Component,OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
 import { EmployeeService } from 'src/app/services/employee.service';
+import { Injectable } from 'angular';
 
 @Component({
   selector: 'app-add-emp',
   templateUrl: './add-emp.component.html',
   styleUrls: ['./add-emp.component.css']
 })
-export class AddEmpComponent {
+
+export class AddEmpComponent implements OnInit {
 
   empForm : FormGroup;
 
@@ -24,7 +26,8 @@ export class AddEmpComponent {
 
   constructor(private _formBuilder : FormBuilder,
     private _empService : EmployeeService,
-    private _dialogRef:DialogRef<AddEmpComponent>){ //servis _formBuilder , bindovanje vrednosti sa input poljima
+    private _dialogRef:DialogRef<AddEmpComponent>,
+    ){ //servis _formBuilder , bindovanje vrednosti sa input poljima
     this.empForm = this._formBuilder.group({
       firstName: '',
       lastName: '',
@@ -37,6 +40,9 @@ export class AddEmpComponent {
       country:''
     })
   };
+  ngOnInit(): void {
+
+  }
 
   onRegister(){
     if(this.empForm.valid){ // proveravanje da li je empForm validna
@@ -44,7 +50,7 @@ export class AddEmpComponent {
       next: (val: any) => {
         alert('Employee added successfully!');
         this._dialogRef.close();
-
+        this._empService.getEmpList();//  !!ne radi!!
       },
       error: (error : any) =>{
         console.error(error);
@@ -56,7 +62,6 @@ export class AddEmpComponent {
   onCancel(){
     this._dialogRef.close();
   }
-
 }
 
 
