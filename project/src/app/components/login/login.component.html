@@ -6,12 +6,12 @@
         <mat-card-content>
           <form action="">
             <mat-form-field>
-              <input matInput placeholder="Username" required name="username" ngModel #username="ngModel">
+              <input matInput placeholder="Username"  name="username" ngModel #username="ngModel">
               <mat-error *ngIf="username.invalid">Username is required</mat-error>
               <mat-icon matSuffix>email</mat-icon>
             </mat-form-field>
             <mat-form-field>
-              <input matInput placeholder="Password" type="password" required minlength="6" name="password" ngModel
+              <input matInput placeholder="Password" type="password"  minlength="6" name="password" ngModel
                 #password="ngModel">
               <mat-error *ngIf="password.errors && password.errors">
                 Password is required
@@ -24,9 +24,9 @@
             <button mat-raised-button color="primary" class="login-button" (click)="onLogin()">
               Login
             </button>
-            <button mat-raised-button color="Basic" class="reg-button">
+            <a routerLink="register"><button mat-raised-button color="Basic" class="reg-button">
               Register
-            </button>
+            </button></a>
           </form>
         </mat-card-content>
       </mat-tab>

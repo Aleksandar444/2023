@@ -28,6 +28,7 @@ import { MatToolbar } from '@angular/material/toolbar';
 import { LoginComponent } from './components/login/login.component';
 import { RouterModule } from '@angular/router';
 import { FlexLayoutModule } from "@angular/flex-layout";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,6 +36,7 @@ import { FlexLayoutModule } from "@angular/flex-layout";
     NavBarComponent,
     AddEmpComponent,
     LoginComponent,
+
 
   ],
   imports: [
