@@ -25,7 +25,9 @@ import { FormGroup } from '@angular/forms';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatInputModule} from '@angular/material/input';
 import { MatToolbar } from '@angular/material/toolbar';
-import { LoginComponent } from './login/login.component';
+import { LoginComponent } from './components/login/login.component';
+import { RouterModule } from '@angular/router';
+import { FlexLayoutModule } from "@angular/flex-layout";
 @NgModule({
   declarations: [
     AppComponent,
@@ -53,7 +55,9 @@ import { LoginComponent } from './login/login.component';
     BrowserAnimationsModule,
     HttpClientModule,
     MatTableModule,
-    MatCardModule
+    MatCardModule,
+    RouterModule,
+    FlexLayoutModule
 
   ],
   providers: [EmployeeService],
