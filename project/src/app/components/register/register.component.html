@@ -4,37 +4,25 @@
     <mat-tab-group mat-stretch-tabs class="example-stretched-tabs">
       <mat-tab label="Sign In">
         <mat-card-content>
-          <form action="">
+          <form [formGroup]="register">
             <mat-form-field>
-              <input matInput placeholder="Username"  name="username" ngModel #username="ngModel">
-              <mat-error *ngIf="username.invalid">Username is required</mat-error>
+              <input matInput placeholder="Username"  name="username" formControlName="userNameReg">
               <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
             </mat-form-field>
             <mat-form-field>
-              <input matInput placeholder="Password" type="password"  minlength="6" name="password" ngModel
-                #password="ngModel">
-              <mat-error *ngIf="password.errors && password.errors">
-                Password is required
-              </mat-error>
-              <mat-error *ngIf="password.errors && password.errors">
-                Password must be of length 6
-              </mat-error>
+              <input matInput placeholder="Password" type="password"  name="password" formControlName="passwordReg">
               <mat-icon matSuffix>lock</mat-icon>
             </mat-form-field>
             <mat-form-field>
-              <input matInput placeholder="Email"  name="email" ngModel #email="ngModel">
-              <mat-error *ngIf="email.invalid">Email is required</mat-error>
+              <input matInput placeholder="Email"  name="email" formControlName="email">
               <mat-icon matSuffix>email</mat-icon>
             </mat-form-field>
             <mat-form-field>
-              <input matInput placeholder="City"  name="city" ngModel #city="ngModel">
-              <mat-error *ngIf="city.invalid">City is required</mat-error>
+              <input matInput placeholder="City"  name="city" formControlName="city">
               <mat-icon matSuffix>location_city</mat-icon>
             </mat-form-field>
             <mat-form-field>
-              <input matInput placeholder="State"  name="state" ngModel #city="ngModel">
-              <mat-error *ngIf="city.invalid">State is required</mat-error>
-
+              <input matInput placeholder="State"  name="state"formControlName="state">
             </mat-form-field>
             <button mat-raised-button color="primary" class="login-button" (click)="onRegister()" >
               Register
