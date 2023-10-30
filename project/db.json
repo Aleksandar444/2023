@@ -101,5 +101,15 @@
       "country": "Serbia",
       "id": 9
     }
+  ],
+  "registredEmployees": [
+    {
+      "userNameReg": "dsds",
+      "passwordReg": "dsds",
+      "email": "dsds",
+      "city": "dsds",
+      "state": "dsds",
+      "id": 1
+    }
   ]
 }
