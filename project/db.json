@@ -88,6 +88,18 @@
       "experience": 222,
       "country": "222",
       "id": 8
+    },
+    {
+      "firstName": "Aleksandar",
+      "lastName": "Čief",
+      "email": "sallehtc55@gmail.com",
+      "date": "2023-10-09T22:00:00.000Z",
+      "gender": "male",
+      "education": "Bachelors Degree",
+      "company": "sss",
+      "experience": 2,
+      "country": "Serbia",
+      "id": 9
     }
   ]
 }

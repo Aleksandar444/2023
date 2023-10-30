@@ -1,6 +1,7 @@
 import { Component,OnInit } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 import { FormControl } from '@angular/forms';
+import { Route, Router } from '@angular/router';
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
@@ -8,7 +9,7 @@ import { FormControl } from '@angular/forms';
 })
 export class RegisterComponent implements OnInit  {
   register : FormGroup<any>;
-  constructor(){
+  constructor( private router : Router){
 
   }
 ngOnInit(): void {
@@ -24,5 +25,6 @@ ngOnInit(): void {
   onRegister(){
     alert("Register works");
     console.log(this.register.value);
+    this.router.navigate(['']);
   }
 }
