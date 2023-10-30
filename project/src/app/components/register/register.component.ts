@@ -29,7 +29,6 @@ ngOnInit(): void {
     this.http.post<any>("http://localhost:3000/registredEmployees", this.register.value).subscribe({
       next: (res) => {
         alert("Successfull registration!");
-        this.register.reset();
         this.router.navigate['login'];
       },
       error:(err) =>{
