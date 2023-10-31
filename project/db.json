@@ -52,6 +52,30 @@
       "experience": 1,
       "country": "adsa",
       "id": 3
+    },
+    {
+      "firstName": "Aleksandar",
+      "lastName": "Čief",
+      "email": "",
+      "date": "",
+      "gender": "male",
+      "education": "Bachelors Degree",
+      "company": "dasdsa",
+      "experience": 1,
+      "country": "sdadsa",
+      "id": 4
+    },
+    {
+      "firstName": "fsafsafasff",
+      "lastName": "asfsafas",
+      "email": "fsafafsaafs",
+      "date": "2023-10-09T22:00:00.000Z",
+      "gender": "male",
+      "education": "Masters Degree",
+      "company": "fsafsafsa",
+      "experience": 1,
+      "country": "fafsafasfsa",
+      "id": 5
     }
   ],
   "registredEmployees": [

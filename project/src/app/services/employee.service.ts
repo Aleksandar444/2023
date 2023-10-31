@@ -15,16 +15,16 @@ export class EmployeeService {
   }
 
   getEmpList() : Observable<any>{ // servis za fetch data iz Emloyee List
-    return this._http.get('http://localhost:3000/employees');   // metoda vraca observable response
+    return this._http.get<any[]>('http://localhost:3000/employees');   // metoda vraca observable response
   }
 
   deleteEmployee(id: number) : Observable<any>{ // servis za brisanje employee iz liste
     return this._http.delete(`http://localhost:3000/employees/${id}`);
   }
 
-  /*updateEmployee(data : any) : Observable<any> {
+  updateEmployee(data : any) : Observable<any> {
     return this._http.put('http://localhost:3000/employees', data);
-  }*/
+  }
   getRegistredEmployee() : Observable<any> { // servis za fetch data iz registredEmployees
     return this._http.get<any>('http://localhost:3000/registredEmployees');
   }
