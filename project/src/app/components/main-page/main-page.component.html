@@ -4,7 +4,7 @@
     <div mat-dialog-title >
       <h2>Employee list </h2>
     </div>
-    <table mat-table [dataSource]="dataSource" matSort>
+    <table mat-table [dataSource]="employees$  | async" matSort>
 
       <!-- ID Column -->
       <ng-container matColumnDef="id">

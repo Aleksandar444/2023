@@ -3,6 +3,7 @@ import { Component,OnInit } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 import { FormControl } from '@angular/forms';
 import { Router } from '@angular/router';
+import { EmployeeService } from 'src/app/services/employee.service';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -11,7 +12,7 @@ import { Router } from '@angular/router';
 export class LoginComponent implements OnInit {
   login:FormGroup<any>;
 
-  constructor(private router :Router,private http: HttpClient){
+  constructor(private router :Router,private http: HttpClient, private _empSevice : EmployeeService){
 
   }
   ngOnInit(): void {
@@ -21,9 +22,10 @@ export class LoginComponent implements OnInit {
     })
   }
   onLogin(){
-    this.http.get<any>("http://localhost:3000/registredEmployees").subscribe(res=>{
+    this._empSevice.getRegistredEmployee().subscribe(res=>{
       const user = res.find((val:any) => {
         return val.userNameReg === this.login.value.userName && val.passwordReg === this.login.value.password
+
       });
       if (user){
         alert("Login success!");
