@@ -70,7 +70,7 @@ import { RegisterComponent } from './components/register/register.component';
 })
 export class AppModule {
   constructor(private router: Router) {
-    this.router.navigate(['']);
+
   }
 
 
