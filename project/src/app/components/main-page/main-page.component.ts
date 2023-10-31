@@ -8,7 +8,7 @@ import {
 import { MatTableDataSource } from '@angular/material/table';
 import { MatSort, MatSortModule } from '@angular/material/sort';
 import { EmployeeService } from 'src/app/services/employee.service';
-import { MAT_DIALOG_DATA, MatDialog } from '@angular/material/dialog';
+import { MAT_DIALOG_DATA, MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { AddEmpComponent } from '../add-emp/add-emp.component';
 import { Observable } from 'rxjs';
 @Component({
@@ -39,6 +39,7 @@ export class MainPageComponent implements OnInit {
   constructor(private _empService: EmployeeService,private _dialog : MatDialog) {}
   ngOnInit(): void {
     this.getEmpList();
+
   }
   getEmpList() {
     // metoda za prikupljanje podataka iz liste

@@ -33,7 +33,8 @@ ngOnInit(): void {
     this._empService.newRegisterEmployee(this.register.value).subscribe({
       next: (res) => {
         alert("Successfull registration!");
-        this.router.navigate['login'];
+        this.router.navigate['/login'];
+
       },
       error:(err) =>{
         alert("Oops, something went wrong!");

@@ -100,104 +100,76 @@
       "experience": 1,
       "country": "safsa",
       "id": 7
+    },
+    {
+      "firstName": "dsasa",
+      "lastName": "dsadsa",
+      "email": "dsa",
+      "date": "2023-10-03T22:00:00.000Z",
+      "gender": "male",
+      "education": "Masters Degree",
+      "company": "dsa",
+      "experience": 1,
+      "country": "dsa",
+      "id": 8
+    },
+    {
+      "firstName": "kokoda",
+      "lastName": "Čief",
+      "email": "",
+      "date": "",
+      "gender": "male",
+      "education": "Bachelors Degree",
+      "company": "dasdsa",
+      "experience": 1,
+      "country": "sdadsa",
+      "id": 9
+    },
+    {
+      "firstName": "Aleksandar",
+      "lastName": "chief",
+      "email": "dsadas",
+      "date": "2023-10-03T22:00:00.000Z",
+      "gender": "male",
+      "education": "Bachelors Degree",
+      "company": "dsadsa",
+      "experience": 2,
+      "country": "serbia",
+      "id": 10
     }
   ],
   "registredEmployees": [
     {
-      "userNameReg": "dsds",
-      "passwordReg": "dsds",
-      "email": "dsds",
-      "city": "dsds",
-      "state": "dsds",
+      "userNameReg": "aleksandar",
+      "passwordReg": "sale",
+      "email": "aleksandarcief@gmail.com",
+      "city": "Novi Sad",
+      "state": "Srbija",
       "id": 1
     },
     {
-      "userNameReg": "aleksandar",
-      "passwordReg": "sale",
-      "email": "sale@gmail.com",
+      "userNameReg": "marko",
+      "passwordReg": "marko",
+      "email": "marko1@gmai.com",
       "city": "Novi Sad",
       "state": "Srbija",
       "id": 2
     },
     {
-      "userNameReg": "maki",
-      "passwordReg": "maki",
-      "email": "maki",
-      "city": "novi sad",
-      "state": "srbija",
+      "userNameReg": "dsada",
+      "passwordReg": "asddsadas",
+      "email": "adssa",
+      "city": "dasasd",
+      "state": "dsaads",
       "id": 3
     },
     {
-      "userNameReg": "a",
-      "passwordReg": "a",
-      "email": "a",
-      "city": "a",
-      "state": "a",
+      "userNameReg": "user",
+      "passwordReg": "user",
+      "email": "dsadadsa",
+      "city": "usdadsa",
+      "state": "sdadsadas",
       "id": 4
-    },
-    {
-      "userNameReg": "drahoslava",
-      "passwordReg": "dada123",
-      "email": "dada",
-      "city": "backa palanka",
-      "state": "srbija",
-      "id": 5
-    },
-    {
-      "userNameReg": "",
-      "passwordReg": "",
-      "email": "",
-      "city": "",
-      "state": "",
-      "id": 6
-    },
-    {
-      "userNameReg": "marko",
-      "passwordReg": "marko",
-      "email": "dsadsa",
-      "city": "dsadsa",
-      "state": "dsadsad",
-      "id": 7
-    },
-    {
-      "userNameReg": "marko",
-      "passwordReg": "marko",
-      "email": "dsada",
-      "city": "dsadsa",
-      "state": "dsadas",
-      "id": 8
-    },
-    {
-      "userNameReg": "novi",
-      "passwordReg": "novi",
-      "email": "dsadsa",
-      "city": "dsads",
-      "state": "dsadsadsa",
-      "id": 9
-    },
-    {
-      "userNameReg": "",
-      "passwordReg": "",
-      "email": "",
-      "city": "",
-      "state": "",
-      "id": 10
-    },
-    {
-      "userNameReg": "",
-      "passwordReg": "",
-      "email": "",
-      "city": "",
-      "state": "",
-      "id": 11
-    },
-    {
-      "userNameReg": "",
-      "passwordReg": "",
-      "email": "",
-      "city": "",
-      "state": "",
-      "id": 12
     }
   ]
 }
