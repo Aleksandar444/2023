@@ -10,6 +10,9 @@ export class EmployeeService {
   constructor(private _http:HttpClient) { //kreiran http servis http client
 
   }
+
+  //1. Do not use "any" create a type
+
   addEmployee(data: any) : Observable<any>{   //metoda u servisu koja ce pomocu POST metode dodavati svakog employee
     return this._http.post('http://localhost:3000/employees', data);   // metoda vraca observable response
   }

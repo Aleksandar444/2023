@@ -3,7 +3,7 @@ import { Component,OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
 import { EmployeeService } from 'src/app/services/employee.service';
-import { Injectable } from 'angular';
+
 
 @Component({
   selector: 'app-add-emp',
@@ -50,7 +50,7 @@ export class AddEmpComponent implements OnInit {
       next: (val: any) => {
         alert('Employee added successfully!');
         this._dialogRef.close();
-        this._empService.getEmpList();//  !!ne radi!!
+        //this._empService.getEmpList();//  !!ne radi!!
       },
       error: (error : any) =>{
         console.error(error);

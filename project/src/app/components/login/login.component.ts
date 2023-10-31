@@ -21,7 +21,12 @@ export class LoginComponent implements OnInit {
     })
   }
   onLogin(){
+
+    //1. http needs to be in a service, not called from component directly
     this.http.get<any>("http://localhost:3000/registredEmployees").subscribe(res=>{
+
+    //2. check for user needs to done by checking does user exists in a database
+    //   not getting all users and try to find it in the list of users
       const user = res.find((val:any) => {
         return val.userNameReg === this.login.value.userName && val.passwordReg === this.login.value.password
       });

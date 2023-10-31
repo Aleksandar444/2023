@@ -25,7 +25,11 @@ ngOnInit(): void {
 }
 
   onRegister(){
+    debugger
     //na dugme register - salje se http post request i beleze se podaci o registrovanom korisniku
+
+    //1. No data validation
+    //2. http needs to be in a service, not called from component directly  
     this.http.post<any>("http://localhost:3000/registredEmployees", this.register.value).subscribe({
       next: (res) => {
         alert("Successfull registration!");
