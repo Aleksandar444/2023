@@ -3,6 +3,7 @@ import { Component,OnInit } from '@angular/core';
 import { FormGroup,FormBuilder } from '@angular/forms';
 import { FormControl } from '@angular/forms';
 import { Route, Router } from '@angular/router';
+import { EmployeeService } from 'src/app/services/employee.service';
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
@@ -10,7 +11,10 @@ import { Route, Router } from '@angular/router';
 })
 export class RegisterComponent implements OnInit  {
   public register : FormGroup<any>;
-  constructor( private router : Router, private formBuilder: FormBuilder, private http:HttpClient){
+  constructor( private router : Router,
+    private formBuilder: FormBuilder,
+    private http:HttpClient,
+    private _empService:EmployeeService){
 
   }
 ngOnInit(): void {
@@ -26,7 +30,7 @@ ngOnInit(): void {
 
   onRegister(){
     //na dugme register - salje se http post request i beleze se podaci o registrovanom korisniku
-    this.http.post<any>("http://localhost:3000/registredEmployees", this.register.value).subscribe({
+    this._empService.newRegisterEmployee(this.register.value).subscribe({
       next: (res) => {
         alert("Successfull registration!");
         this.router.navigate['login'];

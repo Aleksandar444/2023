@@ -28,6 +28,30 @@
       "experience": 2,
       "country": "serbia",
       "id": 1
+    },
+    {
+      "firstName": "dsadsa",
+      "lastName": "ddsadsa",
+      "email": "sdad",
+      "date": "2023-10-02T22:00:00.000Z",
+      "gender": "male",
+      "education": "Bachelors Degree",
+      "company": "dasdas",
+      "experience": 1,
+      "country": "dsadas",
+      "id": 2
+    },
+    {
+      "firstName": "dada",
+      "lastName": "dada",
+      "email": "dsadsa",
+      "date": "2023-10-02T22:00:00.000Z",
+      "gender": "female",
+      "education": "Bachelors Degree",
+      "company": "asda",
+      "experience": 1,
+      "country": "adsa",
+      "id": 3
     }
   ],
   "registredEmployees": [
@@ -78,6 +102,30 @@
       "city": "",
       "state": "",
       "id": 6
+    },
+    {
+      "userNameReg": "marko",
+      "passwordReg": "marko",
+      "email": "dsadsa",
+      "city": "dsadsa",
+      "state": "dsadsad",
+      "id": 7
+    },
+    {
+      "userNameReg": "marko",
+      "passwordReg": "marko",
+      "email": "dsada",
+      "city": "dsadsa",
+      "state": "dsadas",
+      "id": 8
+    },
+    {
+      "userNameReg": "novi",
+      "passwordReg": "novi",
+      "email": "dsadsa",
+      "city": "dsads",
+      "state": "dsadsadsa",
+      "id": 9
     }
   ]
 }

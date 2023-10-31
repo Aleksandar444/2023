@@ -10,7 +10,7 @@ export class EmployeeService {
   constructor(private _http:HttpClient) { //kreiran http servis http client
 
   }
-  addEmployee(data: any) : Observable<any>{   //metoda u servisu koja ce pomocu POST metode dodavati svakog employee
+  addEmployee(data) : Observable<any>{   //metoda u servisu koja ce pomocu POST metode dodavati svakog employee
     return this._http.post('http://localhost:3000/employees', data);   // metoda vraca observable response
   }
 
@@ -25,6 +25,12 @@ export class EmployeeService {
   /*updateEmployee(data : any) : Observable<any> {
     return this._http.put('http://localhost:3000/employees', data);
   }*/
+  getRegistredEmployee() : Observable<any> { // servis za fetch data iz registredEmployees
+    return this._http.get<any>('http://localhost:3000/registredEmployees');
+  }
 
+  newRegisterEmployee(data) : Observable<any>{ // servis za ubacivanje newRegisterEmployee
+    return this._http.post('http://localhost:3000/registredEmployees',data);
+  }
 
 }
