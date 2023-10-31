@@ -16,7 +16,20 @@
   "profile": {
     "name": "typicode"
   },
-  "employees": [],
+  "employees": [
+    {
+      "firstName": "Aleksandar",
+      "lastName": "Čief",
+      "email": "dsadas",
+      "date": "2023-10-03T22:00:00.000Z",
+      "gender": "male",
+      "education": "Bachelors Degree",
+      "company": "dsadsa",
+      "experience": 2,
+      "country": "serbia",
+      "id": 1
+    }
+  ],
   "registredEmployees": [
     {
       "userNameReg": "dsds",
