@@ -20,62 +20,64 @@
     {
       "firstName": "Aleksandar",
       "lastName": "Čief",
-      "email": "sallehtc55@gmail.com",
-      "date": "",
+      "email": "dsadas",
+      "date": "2023-10-03T22:00:00.000Z",
       "gender": "male",
-      "education": "Masters Degree",
-      "company": "sada",
+      "education": "Bachelors Degree",
+      "company": "dsadsa",
       "experience": 2,
-      "country": "Serbia",
+      "country": "serbia",
+      "id": 1
+    }
+  ],
+  "registredEmployees": [
+    {
+      "userNameReg": "dsds",
+      "passwordReg": "dsds",
+      "email": "dsds",
+      "city": "dsds",
+      "state": "dsds",
+      "id": 1
+    },
+    {
+      "userNameReg": "aleksandar",
+      "passwordReg": "sale",
+      "email": "sale@gmail.com",
+      "city": "Novi Sad",
+      "state": "Srbija",
+      "id": 2
+    },
+    {
+      "userNameReg": "maki",
+      "passwordReg": "maki",
+      "email": "maki",
+      "city": "novi sad",
+      "state": "srbija",
       "id": 3
     },
     {
-      "firstName": "sss",
-      "lastName": "aaa",
-      "email": "sallehtc55@gmail.com",
-      "date": "2023-10-02T22:00:00.000Z",
-      "gender": "male",
-      "education": "Doctorate (PhD)",
-      "company": "safas",
-      "experience": 2,
-      "country": "safa",
+      "userNameReg": "a",
+      "passwordReg": "a",
+      "email": "a",
+      "city": "a",
+      "state": "a",
       "id": 4
     },
     {
-      "firstName": "a",
-      "lastName": "a",
-      "email": "sallehtc55@gmail.com",
-      "date": "2023-10-03T22:00:00.000Z",
-      "gender": "male",
-      "education": "Masters Degree",
-      "company": "2",
-      "experience": 1,
-      "country": "2",
+      "userNameReg": "drahoslava",
+      "passwordReg": "dada123",
+      "email": "dada",
+      "city": "backa palanka",
+      "state": "srbija",
       "id": 5
     },
     {
-      "firstName": "d",
-      "lastName": "d",
-      "email": "d",
-      "date": "2023-10-02T22:00:00.000Z",
-      "gender": "female",
-      "education": "Masters Degree",
-      "company": "w",
-      "experience": 2,
-      "country": "1",
+      "userNameReg": "",
+      "passwordReg": "",
+      "email": "",
+      "city": "",
+      "state": "",
       "id": 6
-    },
-    {
-      "firstName": "aa",
-      "lastName": "dd",
-      "email": "s",
-      "date": "2023-10-03T22:00:00.000Z",
-      "gender": "male",
-      "education": "Masters Degree",
-      "company": "2",
-      "experience": 1,
-      "country": "2",
-      "id": 7
     }
   ]
 }

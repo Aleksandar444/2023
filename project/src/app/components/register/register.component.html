@@ -1,0 +1,38 @@
+<div class="login-page">
+  <mat-card class="mat-elevation-z12">
+    <mat-card-title style="text-align:center;">Register</mat-card-title>
+    <mat-tab-group mat-stretch-tabs class="example-stretched-tabs">
+      <mat-tab label="Sign In">
+        <mat-card-content>
+          <form [formGroup]="register">
+            <mat-form-field>
+              <input matInput placeholder="Username"  name="username" formControlName="userNameReg">
+              <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            </mat-form-field>
+            <mat-form-field>
+              <input matInput placeholder="Password" type="password"  name="password" formControlName="passwordReg">
+              <mat-icon matSuffix>lock</mat-icon>
+            </mat-form-field>
+            <mat-form-field>
+              <input matInput placeholder="Email"  name="email" formControlName="email">
+              <mat-icon matSuffix>email</mat-icon>
+            </mat-form-field>
+            <mat-form-field>
+              <input matInput placeholder="City"  name="city" formControlName="city">
+              <mat-icon matSuffix>location_city</mat-icon>
+            </mat-form-field>
+            <mat-form-field>
+              <input matInput placeholder="State"  name="state"formControlName="state">
+            </mat-form-field>
+            <button mat-raised-button color="primary" class="login-button" (click)="onRegister()" >
+              Register
+            </button>
+            <a style="text-decoration: none;" routerLink=""><button mat-raised-button color="Basic" class="reg-button">
+              Back to login
+            </button></a>
+          </form>
+        </mat-card-content>
+      </mat-tab>
+    </mat-tab-group>
+  </mat-card>
+</div>
