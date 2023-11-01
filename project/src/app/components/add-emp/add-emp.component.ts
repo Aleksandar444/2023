@@ -45,7 +45,7 @@ export class AddEmpComponent implements OnInit {
     this.empForm.patchValue(this.data);
   }
 
-  onRegister(){
+  onRegister(){ // dodavanje novog employee u Listu
     if(this.empForm.valid){ // proveravanje da li je empForm validna
      this._empService.addEmployee(this.empForm.value,).subscribe({ //ako je validna poziva se empService za dodavanje novog employee
       next: (val: any) => {

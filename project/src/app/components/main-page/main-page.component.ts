@@ -58,6 +58,7 @@ export class MainPageComponent implements OnInit {
     })
   }
 
+
   updateEmployee(data) {
     let dialoRef=this._dialog.open(AddEmpComponent, {data});
     dialoRef.afterClosed().subscribe(updatedEmployee  =>{

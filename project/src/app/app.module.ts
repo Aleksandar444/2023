@@ -29,6 +29,7 @@ import { LoginComponent } from './components/login/login.component';
 import { RouterModule } from '@angular/router';
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { RegisterComponent } from './components/register/register.component';
+import { passwordValidator } from './components/register/passwordValidator';
 @NgModule({
   declarations: [
     AppComponent,

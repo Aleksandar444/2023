@@ -29,4 +29,6 @@ mat-card-content {
   width: 80%;
   margin: 20px auto;
 }
-
+.error{
+  color: red;
+}

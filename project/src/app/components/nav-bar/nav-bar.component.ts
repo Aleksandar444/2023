@@ -3,6 +3,7 @@ import { AddEmpComponent } from '../add-emp/add-emp.component';
 import { MatDialog } from '@angular/material/dialog';
 import { EmployeeService } from 'src/app/services/employee.service';
 import { MainPageComponent } from '../main-page/main-page.component';
+import { DialogRef } from '@angular/cdk/dialog';
 
 @Component({
   selector: 'app-nav-bar',
@@ -15,7 +16,7 @@ export class NavBarComponent   {
 
 
 
-  constructor(private _dialog : MatDialog, ) { //
+  constructor(private _dialog : MatDialog,private _empService : EmployeeService ) { //
 
   }
 
