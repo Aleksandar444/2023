@@ -20,98 +20,26 @@
     {
       "firstName": "Aleksandar",
       "lastName": "Čief",
-      "email": "dsadas",
-      "date": "2023-10-03T22:00:00.000Z",
+      "email": "sallehtc55@gmail.com",
+      "date": "2023-11-07T23:00:00.000Z",
       "gender": "male",
       "education": "Bachelors Degree",
-      "company": "dsadsa",
-      "experience": 2,
-      "country": "serbia",
+      "company": "comdata",
+      "experience": 1,
+      "country": "Serbia",
       "id": 1
     },
     {
-      "firstName": "dsadsa",
-      "lastName": "ddsadsa",
-      "email": "sdad",
-      "date": "2023-10-02T22:00:00.000Z",
-      "gender": "male",
+      "firstName": "Martin",
+      "lastName": "Cief",
+      "email": "drcief@gmai..com",
+      "date": "2023-11-07T23:00:00.000Z",
+      "gender": "female",
       "education": "Bachelors Degree",
-      "company": "dasdas",
-      "experience": 1,
-      "country": "dsadas",
+      "company": "comdata",
+      "experience": 15,
+      "country": "Serbia",
       "id": 2
-    },
-    {
-      "firstName": "dada",
-      "lastName": "dada",
-      "email": "dsadsa",
-      "date": "2023-10-02T22:00:00.000Z",
-      "gender": "female",
-      "education": "Bachelors Degree",
-      "company": "asda",
-      "experience": 1,
-      "country": "adsa",
-      "id": 3
-    },
-    {
-      "firstName": "Aleksandar",
-      "lastName": "Čief",
-      "email": "",
-      "date": "",
-      "gender": "male",
-      "education": "Bachelors Degree",
-      "company": "dasdsa",
-      "experience": 1,
-      "country": "sdadsa",
-      "id": 4
-    },
-    {
-      "firstName": "fsafsafasff",
-      "lastName": "asfsafas",
-      "email": "fsafafsaafs",
-      "date": "2023-10-09T22:00:00.000Z",
-      "gender": "male",
-      "education": "Masters Degree",
-      "company": "fsafsafsa",
-      "experience": 1,
-      "country": "fafsafasfsa",
-      "id": 5
-    },
-    {
-      "firstName": "aasfafasfasfasfasfafafafa",
-      "lastName": "sdadas",
-      "email": "sdaasdsdadas",
-      "date": "2023-10-02T22:00:00.000Z",
-      "gender": "male",
-      "education": "Bachelors Degree",
-      "company": "safsa",
-      "experience": 1,
-      "country": "fsafsa",
-      "id": 6
-    },
-    {
-      "firstName": "test",
-      "lastName": "test",
-      "email": "dsadasd",
-      "date": "2023-10-08T22:00:00.000Z",
-      "gender": "female",
-      "education": "Doctorate (PhD)",
-      "company": "2",
-      "experience": 1,
-      "country": "safsa",
-      "id": 7
-    },
-    {
-      "firstName": "dsasa",
-      "lastName": "dsadsa",
-      "email": "dsa",
-      "date": "2023-10-03T22:00:00.000Z",
-      "gender": "male",
-      "education": "Masters Degree",
-      "company": "dsa",
-      "experience": 1,
-      "country": "dsa",
-      "id": 8
     }
   ],
   "registredEmployees": [
@@ -138,6 +66,38 @@
       "city": "",
       "state": "",
       "id": 3
+    },
+    {
+      "userNameReg": "aleksandar",
+      "passwordReg": "sale1",
+      "email": "sdadasdsasad",
+      "city": "adssad",
+      "state": "dsadsadsa",
+      "id": 4
+    },
+    {
+      "userNameReg": "",
+      "passwordReg": "",
+      "email": "",
+      "city": "",
+      "state": "",
+      "id": 5
+    },
+    {
+      "userNameReg": "marko1",
+      "passwordReg": "marko1",
+      "email": "sadasdas",
+      "city": "dsadsa",
+      "state": "dsadsa",
+      "id": 6
+    },
+    {
+      "userNameReg": "stanislava",
+      "passwordReg": "nana1",
+      "email": "drasko1@gmail.com",
+      "city": "Novi Sad",
+      "state": "Srbija",
+      "id": 7
     }
   ]
 }

@@ -22,8 +22,8 @@ export class EmployeeService {
     return this._http.delete(`http://localhost:3000/employees/${id}`);
   }
 
-  updateEmployee(data : any) : Observable<any> {
-    return this._http.put(`http://localhost:3000/employees/`, data);
+  updateEmployee(id: number,data:any) : Observable<any> {
+    return this._http.put(`http://localhost:3000/employees/${id}`, data);
   }
   getRegistredEmployee() : Observable<any> { // servis za fetch data iz registredEmployees
     return this._http.get<any>('http://localhost:3000/registredEmployees');

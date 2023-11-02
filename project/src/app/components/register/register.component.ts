@@ -35,7 +35,7 @@ export class RegisterComponent implements OnInit {
     this._empService.newRegisterEmployee(this.register.value).subscribe({
       next: (res) => {
         alert("Successfull registration!");
-        this.router.navigate['/login'];
+        this.router.navigate(['/login']);
 
       },
       error: (err) => {

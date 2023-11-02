@@ -45,7 +45,6 @@ export class MainPageComponent implements OnInit {
     // metoda za prikupljanje podataka iz liste
     this.employees$ = this._empService.getEmpList();
   }
-
   deleteEmployee(id:number){ // metoda za brisanje Employee i njegovih podataka iz liste
     this._empService.deleteEmployee(id).subscribe({
       next: (res) => {
@@ -57,15 +56,18 @@ export class MainPageComponent implements OnInit {
       }
     })
   }
-
-
-  updateEmployee(data) {
+  updateEmployee(data:any,id:number) {
     let dialoRef=this._dialog.open(AddEmpComponent, {data});
     dialoRef.afterClosed().subscribe(updatedEmployee  =>{
       if(updatedEmployee) {
-        this._empService.updateEmployee(updatedEmployee).subscribe(res =>{
-          console.log('Employee edited:', res);
-          this.getEmpList();
+        this._empService.updateEmployee(updatedEmployee,id).subscribe({
+          next:(res) =>{
+            alert("Employee successfully updated!");
+            this.getEmpList();
+          },
+          error:(err) => {
+            alert("Error ! Something wrong!");
+          }
         })
       }
     })
