@@ -16,32 +16,7 @@
   "profile": {
     "name": "typicode"
   },
-  "employees": [
-    {
-      "firstName": "Aleksandar",
-      "lastName": "Čief",
-      "email": "sallehtc55@gmail.com",
-      "date": "2023-11-07T23:00:00.000Z",
-      "gender": "male",
-      "education": "Bachelors Degree",
-      "company": "comdata",
-      "experience": 1,
-      "country": "Serbia",
-      "id": 1
-    },
-    {
-      "firstName": "Martin",
-      "lastName": "Cief",
-      "email": "drcief@gmai..com",
-      "date": "2023-11-07T23:00:00.000Z",
-      "gender": "female",
-      "education": "Bachelors Degree",
-      "company": "comdata",
-      "experience": 15,
-      "country": "Serbia",
-      "id": 2
-    }
-  ],
+  "employees": [],
   "registredEmployees": [
     {
       "userNameReg": "sale",

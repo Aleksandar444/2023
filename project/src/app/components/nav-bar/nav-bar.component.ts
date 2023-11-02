@@ -16,14 +16,21 @@ export class NavBarComponent   {
 
 
 
-  constructor(private _dialog : MatDialog,private _empService : EmployeeService ) { //
+  constructor(private _dialog : MatDialog,private _empService : EmployeeService, ) { //
 
   }
 
 
   addEmp(){ // za otvaranje addEmp componente
-    this._dialog.open(AddEmpComponent);
+    const dialogRef = this._dialog.open(AddEmpComponent);
 
+    dialogRef.afterClosed().subscribe({
+      next:(res) =>{
+        if(res){
+          this._empService.getEmpList();
+        }
+      }
+    })
   }
 
 
