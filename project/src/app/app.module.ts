@@ -30,6 +30,7 @@ import { RouterModule } from '@angular/router';
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { RegisterComponent } from './components/register/register.component';
 import { passwordValidator } from './components/register/passwordValidator';
+import { MatTableDataSource } from '@angular/material/table';
 @NgModule({
   declarations: [
     AppComponent,
@@ -60,7 +61,8 @@ import { passwordValidator } from './components/register/passwordValidator';
     MatTableModule,
     MatCardModule,
     RouterModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+
 
   ],
   providers: [EmployeeService],

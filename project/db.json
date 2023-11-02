@@ -112,148 +112,32 @@
       "experience": 1,
       "country": "dsa",
       "id": 8
-    },
-    {
-      "firstName": "Aleksandar",
-      "lastName": "chief",
-      "email": "dsadas",
-      "date": "2023-10-03T22:00:00.000Z",
-      "gender": "male",
-      "education": "Bachelors Degree",
-      "company": "dsadsa",
-      "experience": 2,
-      "country": "serbia",
-      "id": 10
-    },
-    {
-      "firstName": "keka",
-      "lastName": "keka",
-      "email": "sdadsa",
-      "date": "2023-10-03T22:00:00.000Z",
-      "gender": "female",
-      "education": "Masters Degree",
-      "company": "ddas",
-      "experience": 1,
-      "country": "dasa",
-      "id": 11
-    },
-    {
-      "firstName": "sfafsa",
-      "lastName": "sfasf",
-      "email": "fasas",
-      "date": "2023-11-07T23:00:00.000Z",
-      "gender": "male",
-      "education": "Doctorate (PhD)",
-      "company": "asfsaf",
-      "experience": 1,
-      "country": "fsafsa",
-      "id": 12
     }
   ],
   "registredEmployees": [
     {
-      "userNameReg": "aleksandar",
+      "userNameReg": "sale",
       "passwordReg": "sale",
-      "email": "aleksandarcief@gmail.com",
+      "email": "sallehtc55@gmail.com",
       "city": "Novi Sad",
       "state": "Srbija",
       "id": 1
     },
     {
-      "userNameReg": "marko",
-      "passwordReg": "marko",
-      "email": "marko1@gmai.com",
+      "userNameReg": "boris",
+      "passwordReg": "boris1",
+      "email": "boris1@gmail.com",
       "city": "Novi Sad",
       "state": "Srbija",
       "id": 2
     },
     {
-      "userNameReg": "dsada",
-      "passwordReg": "asddsadas",
-      "email": "adssa",
-      "city": "dasasd",
-      "state": "dsaads",
+      "userNameReg": "",
+      "passwordReg": "",
+      "email": "",
+      "city": "",
+      "state": "",
       "id": 3
-    },
-    {
-      "userNameReg": "user",
-      "passwordReg": "user",
-      "email": "dsadadsa",
-      "city": "usdadsa",
-      "state": "sdadsadas",
-      "id": 4
-    },
-    {
-      "userNameReg": "dragan",
-      "passwordReg": "dragan",
-      "email": "dragan",
-      "city": "dragan",
-      "state": "dragan",
-      "id": 5
-    },
-    {
-      "userNameReg": "",
-      "passwordReg": "",
-      "email": "",
-      "city": "",
-      "state": "",
-      "id": 6
-    },
-    {
-      "userNameReg": "",
-      "passwordReg": "",
-      "email": "",
-      "city": "",
-      "state": "",
-      "id": 7
-    },
-    {
-      "userNameReg": "",
-      "passwordReg": "",
-      "email": "",
-      "city": "",
-      "state": "",
-      "id": 8
-    },
-    {
-      "userNameReg": "",
-      "passwordReg": "",
-      "email": "",
-      "city": "",
-      "state": "",
-      "id": 9
-    },
-    {
-      "userNameReg": "",
-      "passwordReg": "",
-      "email": "",
-      "city": "",
-      "state": "",
-      "id": 10
-    },
-    {
-      "userNameReg": "",
-      "passwordReg": "",
-      "email": "",
-      "city": "",
-      "state": "",
-      "id": 11
-    },
-    {
-      "userNameReg": "",
-      "passwordReg": "",
-      "email": "",
-      "city": "",
-      "state": "",
-      "id": 12
-    },
-    {
-      "userNameReg": "",
-      "passwordReg": "",
-      "email": "",
-      "city": "",
-      "state": "",
-      "id": 13
     }
   ]
 }
