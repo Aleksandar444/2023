@@ -94,6 +94,38 @@
       "city": "novi sad",
       "state": "srbija",
       "id": 8
+    },
+    {
+      "userNameReg": "",
+      "passwordReg": "",
+      "email": "",
+      "city": "",
+      "state": "",
+      "id": 9
+    },
+    {
+      "userNameReg": "",
+      "passwordReg": "",
+      "email": "",
+      "city": "",
+      "state": "",
+      "id": 10
+    },
+    {
+      "userNameReg": "",
+      "passwordReg": "",
+      "email": "",
+      "city": "",
+      "state": "",
+      "id": 11
+    },
+    {
+      "userNameReg": "noviKorisnik",
+      "passwordReg": "novi1",
+      "email": "novi1@gmail.com",
+      "city": "Bačka Palanka",
+      "state": "Srbija",
+      "id": 12
     }
   ]
 }

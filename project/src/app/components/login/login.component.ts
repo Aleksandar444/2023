@@ -1,24 +1,26 @@
 import { HttpClient } from '@angular/common/http';
 import { Component,OnInit } from '@angular/core';
-import { FormGroup } from '@angular/forms';
+import { FormGroup, Validators } from '@angular/forms';
 import { FormControl } from '@angular/forms';
 import { Router } from '@angular/router';
 import { EmployeeService } from 'src/app/services/employee.service';
+import { Validator } from '@angular/forms';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  login:FormGroup<any>;
+  login:FormGroup;
 
   constructor(private router :Router,private http: HttpClient, private _empSevice : EmployeeService){
 
   }
   ngOnInit(): void {
     this.login = new FormGroup({
-      'userName' : new FormControl,
+      'userName' : new FormControl ,
       'password' :new FormControl
+
     })
   }
   onLogin(){

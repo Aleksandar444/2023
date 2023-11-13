@@ -10,22 +10,56 @@
           <form [formGroup]="register">
             <mat-form-field>
               <input matInput placeholder="Username"  name="username" formControlName="userNameReg" >
+
               <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+              <div class="form-text " style="color: red;" *ngIf="userNameReg.errors?.['required'] && userNameReg.touched">
+                Username is required.
+              </div>
+              <div class="form-text " style="color: red;" *ngIf="userNameReg.errors?.['minlength'] && userNameReg.touched">
+                Username is too short.
+              </div>
+              <div class="form-text " style="color: red;" *ngIf="userNameReg.errors?.['pattern'] && userNameReg.touched">
+                Dont use numbers in username.
+              </div>
             </mat-form-field>
             <mat-form-field>
               <input matInput placeholder="Password" type="password"  name="password" formControlName="passwordReg">
+              <div class="form-text " style="color: red;" *ngIf="passwordReg.errors?.['required'] && passwordReg.touched">
+                Password is required.
+              </div>
+              <div class="form-text " style="color: red;" *ngIf="passwordReg.errors?.['minlength'] && passwordReg.touched">
+                Password is too short.
+              </div>
               <mat-icon matSuffix>lock</mat-icon>
             </mat-form-field>
             <mat-form-field>
               <input matInput placeholder="Email"  name="email" formControlName="email">
+              <div class="form-text " style="color: red;" *ngIf="email.errors?.['required'] && email.touched">
+                Email is required.
+              </div>
+              <div class="form-text " style="color: red;" *ngIf="email.errors?.['email'] && email.touched">
+                Email is invalid.
+              </div>
               <mat-icon matSuffix>email</mat-icon>
             </mat-form-field>
             <mat-form-field>
               <input matInput placeholder="City"  name="city" formControlName="city">
+              <div class="form-text " style="color: red;" *ngIf="city.errors?.['required'] && city.touched">
+                City is required.
+              </div>
+              <div class="form-text " style="color: red;" *ngIf="city.errors?.['pattern'] && city.touched">
+                Dont use numbers in city name.
+              </div>
               <mat-icon matSuffix>location_city</mat-icon>
             </mat-form-field>
             <mat-form-field>
               <input matInput placeholder="State"  name="state"formControlName="state">
+              <div class="form-text " style="color: red;" *ngIf="state.errors?.['required'] && state.touched">
+                State is required.
+              </div>
+              <div class="form-text " style="color: red;" *ngIf="state.errors?.['pattern'] && state.touched">
+                Dont use numbers in state name.
+              </div>
               <mat-icon matSuffix>location_city</mat-icon>
             </mat-form-field>
             <button mat-raised-button color="primary" class="login-button" (click)="onRegister()" >

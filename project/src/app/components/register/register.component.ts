@@ -22,27 +22,50 @@ export class RegisterComponent implements OnInit {
   ngOnInit(): void {
     // bindovanje input polja u Register formi
     this.register = this.formBuilder.group({
-      userNameReg: [''],
-      passwordReg: ['', [Validators.required, passwordValidator()]],
-      email: [''],
-      city: [''],
-      state: ['']
+      userNameReg: ['', [Validators.required,Validators.minLength(2),Validators.pattern("[a-zA-Z].*")]],
+      passwordReg: ['', [Validators.required,Validators.minLength(5) ]],
+      email: ['', [Validators.required,Validators.email]],
+      city: ['', [Validators.required,Validators.pattern("[a-zA-Z].*")]],
+      state: ['', [Validators.required,Validators.pattern("[a-zA-Z].*")]]
     })
   }
 
   onRegister() {
-    //na dugme register - salje se http post request i beleze se podaci o registrovanom korisniku
-    this._empService.newRegisterEmployee(this.register.value).subscribe({
-      next: (res) => {
-        alert("Successfull registration!");
-        this.router.navigate(['/login']);
+    if (this.register.value.userNameReg &&
+        this.register.value.passwordReg &&
+        this.register.value.email &&
+        this.register.value.city &&
+        this.register.value.state ) {
+          //na dugme register - salje se http post request i beleze se podaci o registrovanom korisniku
+          this._empService.newRegisterEmployee(this.register.value).subscribe({
+            next: (res) => {
+              alert("Successfull registration!");
+              this.router.navigate(['/login']);
 
-      },
-      error: (err) => {
-        alert("Oops, something went wrong!");
-      }
-    })
+            },
+            error: (err) => {
+              alert("Oops, something went wrong!");
+            }
+          })
+    }else {
+      alert("Please fill in all fields.");
+    }
 
 
+  }
+  get userNameReg():FormControl {
+    return this.register.get('userNameReg') as FormControl;
+  }
+  get passwordReg():FormControl {
+    return this.register.get('passwordReg') as FormControl;
+  }
+  get email():FormControl {
+    return this.register.get('email') as FormControl;
+  }
+  get city():FormControl {
+    return this.register.get('city') as FormControl;
+  }
+  get state():FormControl {
+    return this.register.get('state') as FormControl;
   }
 }
