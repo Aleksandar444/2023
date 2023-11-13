@@ -19,7 +19,7 @@
                 Username is too short.
               </div>
               <div class="form-text " style="color: red;" *ngIf="userNameReg.errors?.['pattern'] && userNameReg.touched">
-                Dont use numbers in username.
+                Dont start with number in username.
               </div>
             </mat-form-field>
             <mat-form-field>

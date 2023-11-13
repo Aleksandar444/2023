@@ -1,9 +1,10 @@
 import { DialogRef } from '@angular/cdk/dialog';
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MAT_DIALOG_DATA, MatDialog } from '@angular/material/dialog';
 import { EmployeeService } from 'src/app/services/employee.service';
 import { Inject } from '@angular/core';
+import { Validator } from '@angular/forms';
 
 @Component({
   selector: 'app-add-emp',
@@ -30,15 +31,15 @@ export class AddEmpComponent implements OnInit {
     @Inject(MAT_DIALOG_DATA) public data: any
   ) { //servis _formBuilder , bindovanje vrednosti sa input poljima
     this.empForm = this._formBuilder.group({
-      firstName: '',
-      lastName: '',
-      email: '',
-      date: '',
-      gender: '',
-      education: '',
-      company: '',
-      experience: '',
-      country: ''
+      firstName: ['',[Validators.required,Validators.minLength(4)]],
+      lastName: ['',[Validators.required]],
+      email: ['',[Validators.required]],
+      date: ['',[Validators.required]],
+      gender: ['',Validators.required],
+      education: ['',[Validators.required]],
+      company: ['',[Validators.required]],
+      experience: ['',[Validators.required]],
+      country: ['',[Validators.required]]
     })
   };
   ngOnInit(): void {
@@ -74,6 +75,31 @@ export class AddEmpComponent implements OnInit {
   }
   onCancel(){
     this._dialogRef.close();
+  }
+
+  get firstName() {
+    return this.empForm.get('firstName') ;
+  }
+  get lastName() {
+    return this.empForm.get('lastName') ;
+  }
+  get email() {
+    return this.empForm.get('email') ;
+  }
+  get date() {
+    return this.empForm.get('date') ;
+  }
+  get gender() {
+    return this.empForm.get('gender') ;
+  }
+  get company() {
+    return this.empForm.get('company') ;
+  }
+  get experience() {
+    return this.empForm.get('experience') ;
+  }
+  get country() {
+    return this.empForm.get('country') ;
   }
 }
 

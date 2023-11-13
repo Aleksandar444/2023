@@ -7,20 +7,35 @@
       <mat-form-field >
         <mat-label>First name</mat-label>
         <input matInput formControlName="firstName" >
+        <div class=" " style="color: red;" *ngIf="firstName.errors?.['required'] && firstName.touched">
+          First name is required.
+        </div>
+        <div class="form-text " style="color: red;" *ngIf="firstName.errors?.['minlength'] && firstName.touched">
+          First name is too short.
+        </div>
       </mat-form-field>
       <mat-form-field  >
         <mat-label>Last name</mat-label>
         <input matInput formControlName="lastName" >
+        <div class=" " style="color: red;" *ngIf="lastName.errors?.['required'] && lastName.touched">
+          Last name is required.
+        </div>
       </mat-form-field>
     </div>
     <div class="row">
       <mat-form-field >
         <mat-label>E-mail</mat-label>
         <input matInput type="email" formControlName="email" >
+        <div class=" " style="color: red;" *ngIf="email.errors?.['required'] && email.touched">
+          E-mail is required.
+        </div>
       </mat-form-field>
       <mat-form-field >
         <mat-label>Date of birth</mat-label>
         <input matInput [matDatepicker]="picker" formControlName="date">
+        <div class=" " style="color: red;" *ngIf="date.errors?.['required'] && date.touched">
+          Date is required.
+        </div>
         <mat-hint>MM/DD/YYYY</mat-hint>
         <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
         <mat-datepicker #picker></mat-datepicker>
@@ -44,16 +59,25 @@
       <mat-form-field  >
         <mat-label>Company</mat-label>
         <input matInput  formControlName="company">
+        <div class=" " style="color: red;" *ngIf="company.errors?.['required'] && company.touched">
+          Company is required.
+        </div>
       </mat-form-field>
     </div>
     <div class="row">
       <mat-form-field  >
         <mat-label>Experience (years)</mat-label>
         <input matInput  type="number" formControlName="experience">
+        <div class=" " style="color: red;" *ngIf="experience.errors?.['required'] && experience.touched">
+          Experience is required.
+        </div>
       </mat-form-field>
       <mat-form-field  >
         <mat-label>Country</mat-label>
         <input matInput  formControlName="country">
+        <div class=" " style="color: red;" *ngIf="country.errors?.['required'] && country.touched">
+          Country is required.
+        </div>
       </mat-form-field>
     </div>
   </div>

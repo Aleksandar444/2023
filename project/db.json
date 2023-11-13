@@ -28,104 +28,28 @@
       "experience": 1,
       "country": "Serbia",
       "id": 1
+    },
+    {
+      "firstName": "dsadsa",
+      "lastName": "dsadsa",
+      "email": "dsadsdsa",
+      "date": "2023-11-07T23:00:00.000Z",
+      "gender": "male",
+      "education": "Masters Degree",
+      "company": "dsadsa",
+      "experience": 1,
+      "country": "dsadsa",
+      "id": 2
     }
   ],
   "registredEmployees": [
     {
       "userNameReg": "sale",
-      "passwordReg": "sale",
-      "email": "sallehtc55@gmail.com",
-      "city": "Novi Sad",
-      "state": "Srbija",
-      "id": 1
-    },
-    {
-      "userNameReg": "boris",
-      "passwordReg": "boris1",
-      "email": "boris1@gmail.com",
-      "city": "Novi Sad",
-      "state": "Srbija",
-      "id": 2
-    },
-    {
-      "userNameReg": "",
-      "passwordReg": "",
-      "email": "",
-      "city": "",
-      "state": "",
-      "id": 3
-    },
-    {
-      "userNameReg": "aleksandar",
       "passwordReg": "sale1",
-      "email": "sdadasdsasad",
-      "city": "adssad",
-      "state": "dsadsadsa",
-      "id": 4
-    },
-    {
-      "userNameReg": "",
-      "passwordReg": "",
-      "email": "",
-      "city": "",
-      "state": "",
-      "id": 5
-    },
-    {
-      "userNameReg": "marko1",
-      "passwordReg": "marko1",
-      "email": "sadasdas",
-      "city": "dsadsa",
-      "state": "dsadsa",
-      "id": 6
-    },
-    {
-      "userNameReg": "stanislava",
-      "passwordReg": "nana1",
-      "email": "drasko1@gmail.com",
-      "city": "Novi Sad",
-      "state": "Srbija",
-      "id": 7
-    },
-    {
-      "userNameReg": "random1",
-      "passwordReg": "random",
-      "email": "random@gmail.com",
-      "city": "novi sad",
+      "email": "sale@gmail.com",
+      "city": "backa palanka",
       "state": "srbija",
-      "id": 8
-    },
-    {
-      "userNameReg": "",
-      "passwordReg": "",
-      "email": "",
-      "city": "",
-      "state": "",
-      "id": 9
-    },
-    {
-      "userNameReg": "",
-      "passwordReg": "",
-      "email": "",
-      "city": "",
-      "state": "",
-      "id": 10
-    },
-    {
-      "userNameReg": "",
-      "passwordReg": "",
-      "email": "",
-      "city": "",
-      "state": "",
-      "id": 11
-    },
-    {
-      "userNameReg": "noviKorisnik",
-      "passwordReg": "novi1",
-      "email": "novi1@gmail.com",
-      "city": "Bačka Palanka",
-      "state": "Srbija",
-      "id": 12
+      "id": 1
     }
   ]
 }
