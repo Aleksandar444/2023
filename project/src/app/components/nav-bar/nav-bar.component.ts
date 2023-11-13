@@ -29,6 +29,9 @@ export class NavBarComponent   {
         if(res){
           this._empService.getEmpList();
         }
+      },
+      error: (err) => {
+        alert("some error");
       }
     })
   }

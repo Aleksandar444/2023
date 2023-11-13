@@ -16,7 +16,20 @@
   "profile": {
     "name": "typicode"
   },
-  "employees": [],
+  "employees": [
+    {
+      "firstName": "Aleksandar",
+      "lastName": "Čief",
+      "email": "sallehtc55@gmail.com",
+      "date": "2023-11-20T23:00:00.000Z",
+      "gender": "male",
+      "education": "Bachelors Degree",
+      "company": "ds",
+      "experience": 1,
+      "country": "Serbia",
+      "id": 1
+    }
+  ],
   "registredEmployees": [
     {
       "userNameReg": "sale",
@@ -73,6 +86,14 @@
       "city": "Novi Sad",
       "state": "Srbija",
       "id": 7
+    },
+    {
+      "userNameReg": "random1",
+      "passwordReg": "random",
+      "email": "random@gmail.com",
+      "city": "novi sad",
+      "state": "srbija",
+      "id": 8
     }
   ]
 }

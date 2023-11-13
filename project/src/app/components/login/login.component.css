@@ -12,7 +12,7 @@
 mat-card {
   width: 30%;
   margin: 10% auto;
-  border-radius: 8px;
+  border-radius:25px;
 }
 mat-form-field, mat-checkbox {
   width: 80%;
