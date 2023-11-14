@@ -30,26 +30,58 @@
       "id": 1
     },
     {
-      "firstName": "dsadsa",
+      "firstName": "saeeeee",
       "lastName": "dsadsa",
       "email": "dsadsdsa",
       "date": "2023-11-07T23:00:00.000Z",
-      "gender": "male",
-      "education": "Masters Degree",
+      "gender": "female",
+      "education": "Bachelors Degree",
       "company": "dsadsa",
-      "experience": 1,
+      "experience": 12,
       "country": "dsadsa",
       "id": 2
+    },
+    {
+      "firstName": "test",
+      "lastName": "test",
+      "email": "test1@gmail.com",
+      "date": "2023-11-15T23:00:00.000Z",
+      "gender": "male",
+      "education": "Bachelors Degree",
+      "company": "ComData",
+      "experience": 1,
+      "country": "Serbia",
+      "id": 3
+    },
+    {
+      "firstName": "sdadsa",
+      "lastName": "dassda",
+      "email": "dsadsad@gmail.com",
+      "date": "2023-11-08T23:00:00.000Z",
+      "gender": "male",
+      "education": "Vocational Training",
+      "company": "dasdsa",
+      "experience": 5,
+      "country": "sadsa",
+      "id": 4
     }
   ],
   "registredEmployees": [
     {
-      "userNameReg": "sale",
+      "userNameReg": "azzachi4",
       "passwordReg": "sale1",
-      "email": "sale@gmail.com",
-      "city": "backa palanka",
-      "state": "srbija",
+      "email": "aleksandarcief@gmail.com",
+      "city": "Bačka Palanka",
+      "state": "Srbija",
       "id": 1
+    },
+    {
+      "userNameReg": "proba",
+      "passwordReg": "proba1",
+      "email": "proba1@gmail.com",
+      "city": "Novi Sad",
+      "state": "Srbija",
+      "id": 2
     }
   ]
 }

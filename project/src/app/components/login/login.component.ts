@@ -24,6 +24,7 @@ export class LoginComponent implements OnInit {
     })
   }
   onLogin(){
+
     this._empSevice.getRegistredEmployee().subscribe(res=>{
       const user = res.find((val:any) => {
         return val.userNameReg === this.login.value.userName && val.passwordReg === this.login.value.password
@@ -38,6 +39,7 @@ export class LoginComponent implements OnInit {
         alert ("User not found! Try to register first!" );
       }
     })
+
 
   }
 }

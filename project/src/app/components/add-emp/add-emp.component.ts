@@ -33,7 +33,7 @@ export class AddEmpComponent implements OnInit {
     this.empForm = this._formBuilder.group({
       firstName: ['',[Validators.required,Validators.minLength(4)]],
       lastName: ['',[Validators.required]],
-      email: ['',[Validators.required]],
+      email: ['',[Validators.required,Validators.email]],
       date: ['',[Validators.required]],
       gender: ['',Validators.required],
       education: ['',[Validators.required]],

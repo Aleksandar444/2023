@@ -29,6 +29,9 @@
         <div class=" " style="color: red;" *ngIf="email.errors?.['required'] && email.touched">
           E-mail is required.
         </div>
+        <div class=" " style="color: red;" *ngIf="email.errors?.['email'] && email.touched">
+          E-mail is invalid.
+        </div>
       </mat-form-field>
       <mat-form-field >
         <mat-label>Date of birth</mat-label>
@@ -82,7 +85,7 @@
     </div>
   </div>
   <div mat-dialog-actions class="action">
-    <button mat-raised-button color="primary" type="submit">{{data ? 'Update' : 'Register'}}</button>
+    <button mat-raised-button color="primary" type="submit">{{data ? 'Update employee' : 'Register employee'}}</button>
     <button mat-raised-button color="warn" (click)="onCancel()">Cancel</button>
   </div>
 </form>

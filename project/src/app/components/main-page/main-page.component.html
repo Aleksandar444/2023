@@ -1,8 +1,8 @@
 <app-nav-bar></app-nav-bar>
 <div class="main">
   <div class="table-container">
-    <div mat-dialog-title >
-      <h2>Employee list </h2>
+    <div mat-dialog-title>
+      <h2>EMPLOYEE LIST </h2>
     </div>
     <table mat-table [dataSource]="employees$  | async" matSort>
 
@@ -82,12 +82,7 @@
 
       <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
       <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-
-      <!-- Row shown when there is no matching data. -->
-
     </table>
-
-
   </div>
 </div>
 
